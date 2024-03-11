@@ -13,5 +13,7 @@ namespace ShopManagement.Domain.CompanyProjectAgg
         CompanyProject Get(Guid id);
 
         List<CompanyProject> GetAll();
+
+        bool Exists(string name);
     }
 }

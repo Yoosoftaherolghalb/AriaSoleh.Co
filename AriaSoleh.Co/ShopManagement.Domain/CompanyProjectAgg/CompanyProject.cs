@@ -11,7 +11,7 @@ namespace ShopManagement.Domain.CompanyProjectAgg
     {
         public string Name { get; private set; }
 
-        public string Description { get; private set; }
+        public string Description { get; private set; } 
 
         public string Picture { get; private set; }
 
