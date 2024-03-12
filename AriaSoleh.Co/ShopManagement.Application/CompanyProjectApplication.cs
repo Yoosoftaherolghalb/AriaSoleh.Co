@@ -15,26 +15,49 @@ public class CompanyProjectApplication : ICompanyProjectApplication
 
     public OperationResult Create(CreateCompanyProject command)
     {
-        if (_companyProjectRepository.Exists(command.Name))
+        if (_companyProjectRepository.Exists(x => x.Name == command.Name))
             return new OperationResult().Failed("قبلا ثبت شده.");
 
+        var slug = command.Slug.Slugify();
         var model = new CompanyProject(command.Name, command.Description,
             command.Picture, command.PictureAlt, command.PictureTitle, command.Keywords,
-            command.MetaDescription, command.Slug);
+            command.MetaDescription, slug);
+
+        _companyProjectRepository.Create(model);
+
+        _companyProjectRepository.SaveChanges();
+
+        return new OperationResult().Succedded();
     }
 
     public OperationResult Edit(EditCompanyProject command)
     {
-        throw new NotImplementedException();
+        var model = _companyProjectRepository.Get(command.Id);
+        if (model == null)
+            return new OperationResult().Failed("رکورد مورد نظر یافت نشد.");
+
+        if (_companyProjectRepository.Exists(x => x.Name == command.Name
+                                                  && x.Id != command.Id))
+            return new OperationResult().Failed("قبلا ثبت شده.");
+
+        var slug = command.Slug.Slugify();
+
+        model.Edit(command.Name, command.Description, command.Picture, command.PictureAlt, command.PictureTitle,
+            command.Keywords, command.MetaDescription, slug);
+
+        _companyProjectRepository.SaveChanges();
+
+        return new OperationResult().Succedded(); 
+
     }
 
-    public CompanyProject GetDetails(Guid id)
+    public EditCompanyProject GetDetails(Guid id)
     {
-        throw new NotImplementedException();
+        return _companyProjectRepository.GetDetails(id);
     }
 
     public List<CompanyProjectViewModel> Search(CompanyProjectSearchModel search)
     {
-        throw new NotImplementedException();
+        return _companyProjectRepository.Search(search);
     }
 }

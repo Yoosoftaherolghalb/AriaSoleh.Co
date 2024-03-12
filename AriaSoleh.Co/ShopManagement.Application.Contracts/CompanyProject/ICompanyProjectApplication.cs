@@ -9,7 +9,7 @@ namespace ShopManagement.Application.Contracts.CompanyProject
 
         OperationResult Edit(EditCompanyProject command);
         
-        Domain.CompanyProjectAgg.CompanyProject GetDetails(Guid id);
+        EditCompanyProject GetDetails(Guid id);
 
         List<CompanyProjectViewModel> Search(CompanyProjectSearchModel search);
     }
