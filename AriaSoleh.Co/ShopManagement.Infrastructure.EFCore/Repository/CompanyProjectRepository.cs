@@ -4,53 +4,51 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
+using _0_Framework.Infrastructure;
 using ShopManagement.Application.Contracts.CompanyProject;
 using ShopManagement.Domain.CompanyProjectAgg;
 
 namespace ShopManagement.Infrastructure.EFCore.Repository
 {
-    public class CompanyProjectRepository : ICompanyProjectRepository
+    public class CompanyProjectRepository : RepositoryBase<Guid, CompanyProject>, ICompanyProjectRepository
     {
         private readonly Context _context;
 
-        public CompanyProjectRepository(Context context)
+        public CompanyProjectRepository(Context context) : base(context)
         {
             _context = context;
         }
 
-        public void Create(CompanyProject entity)
-        {
-            _context.CompanyProjects.Add(entity); 
-        }
-
-        public CompanyProject? Get(Guid id)
-        {
-            throw new NotImplementedException();
-        }
-
-        public List<CompanyProject> GetAll()
-        {
-            throw new NotImplementedException();
-        }
-
-        public bool Exists(Expression<Func<CompanyProject, bool>> ex)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void SaveChanges()
-        {
-            throw new NotImplementedException();
-        }
-
         public EditCompanyProject GetDetails(Guid id)
         {
-            throw new NotImplementedException();
+            return _context.CompanyProjects.Select(x => new EditCompanyProject()
+            {
+                Id = x.Id,
+                Description = x.Description,
+                Keywords = x.Keywords,
+                MetaDescription = x.MetaDescription,
+                Name = x.Name,
+                Slug = x.Slug,
+                Picture = x.Picture,
+                PictureAlt = x.PictureAlt,
+                PictureTitle = x.PictureTitle
+            }).FirstOrDefault(x => x.Id == id);
         }
 
         public List<CompanyProjectViewModel> Search(CompanyProjectSearchModel search)
         {
-            throw new NotImplementedException();
+            var query = _context.CompanyProjects.Select(x => new CompanyProjectViewModel
+            {
+                Id = x.Id,
+                Picture = x.Picture,
+                Name = x.Name,
+                CreationDate = x.CreationDate.ToString(),
+            });
+
+            if (!string.IsNullOrWhiteSpace(search.Name))
+                query = query.Where(x => x.Name.Contains(search.Name));
+
+            return query.OrderByDescending(x => x.CreationDate).ToList();
         }
     }
 }
