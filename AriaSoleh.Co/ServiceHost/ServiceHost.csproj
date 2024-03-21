@@ -17,4 +17,9 @@
     <ProjectReference Include="..\ShopManagement.Cofiguration\ShopManagement.Cofiguration.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\Theme\fonts\flaticon\" />
+    <Folder Include="wwwroot\Theme\plugins\revolution\addon-visual-editor\assets\" />
+  </ItemGroup>
+
 </Project>

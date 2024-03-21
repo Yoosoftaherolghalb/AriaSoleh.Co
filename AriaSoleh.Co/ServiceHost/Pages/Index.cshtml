@@ -1,10 +1,674 @@
 ﻿@page
 @model IndexModel
 @{
-    ViewData["Title"] = "Home page";
+    ViewData["Title"] = "صفحه اصلی";
+    <!--ViewData["keywords"] = "ساخت سوله، سوله سازی، یزد، آهن آلات، آریا، سوله";-->
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+@section Seo
+    {
+    <meta name="keywords" content="ساخت سوله، سوله سازی، یزد، آهن آلات، آریا، سوله" />
+    <meta name="description" content="ساخت سوله، سوله سازی، یزد، آهن آلات، آریا، سوله" />
+}
+
+
+<!-- Slider -->
+<div class="main-slider style-two default-banner rev-slider-rtl">
+    <div class="tp-banner-container">
+        <div class="tp-banner">
+            <div id="rev_slider_1014_1_wrapper" class="rev_slider_wrapper fullscreen-container" data-alias="typewriter-effect" data-source="gallery">
+                <!-- اسلایدر -->
+                <div id="rev_slider_1014_1" class="rev_slider fullscreenbanner" style="display:none;" data-version="5.3.0.2">
+                    <ul>
+                        <!-- SLIDE 1 -->
+                        <li data-index="rs-1000" data-transition="slidingoverlayhorizontal" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="~/Theme/images/main-slider/slide1.jpg"
+                            data-rotate="0" data-saveperformance="off" data-title="بعدی" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+                            <!-- MAIN IMAGE -->
+                            <img src="~/Theme/images/main-slider/slide1.jpg" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina />
+                            <!-- LAYERS -->
+                            <!-- LAYER NR. 1 [ for overlay ] -->
+                            <div class="tp-caption tp-shape tp-shapewrapper " id="slide-100-layer-1" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" data-width="full"
+                                 data-height="full" data-whitespace="nowrap" data-type="shape" data-basealign="slide" data-responsive_offset="off" data-responsive="off" data-frames='[{"from":"opacity:0;","speed":1000,"to":"o:1;","delay":0,"ease":"Power4.easeOut"},{"delay":"wait","speed":1000,"to":"opacity:0;","ease":"Power4.easeOut"}]'
+                                 data-textAlign="['right','right','right','right']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 12;background-color:rgba(0, 0, 0, 0.50);border-color:rgba(0, 0, 0, 0);border-width:0px;">
+                            </div>
+
+                            <!-- LAYER NR. 2 [ for title ] -->
+                            <div class="tp-caption  tp-resizeme" id="slide-100-layer-2" data-x="['right','right','right','right']" data-hoffset="['30','30','30','30']" data-y="['top','top','top','top']" data-voffset="['170','150','150','140']" data-fontsize="['70','60','50','40']"
+                                 data-lineheight="['70','60','50','40']" data-width="['700','700','700','700']" data-height="['none','none','none','none']" data-whitespace="['normal','normal','normal','normal']" data-type="text" data-responsive_offset="on"
+                                 data-frames='[{"from":"y:50px(R);opacity:0;","speed":1500,"to":"o:1;","delay":500,"ease":"Power4.easeOut"},{"delay":"wait","speed":1000,"to":"y:-50px;opacity:0;","ease":"Power2.easeInOut"}]' data-textAlign="['right','right','right','right']"
+                                 data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 13; white-space: normal; font-size: 60px; line-height: 60px; font-weight: 700; color: rgba(255, 255, 255, 1.00); border-width:0px;">
+                                <span class="text-uppercase" style="font-family: 'dana';"></span>
+                            </div>
+
+                            <!-- LAYER NR. 3 [ for paragraph] -->
+                            <div class="tp-caption tp-resizeme" id="slide-100-layer-3" data-x="['right','right','right','right']" data-hoffset="['30','30','30','30']" data-y="['top','top','top','top']" data-voffset="['260','250','225','200']" data-fontsize="['18','18','18','16']"
+                                 data-lineheight="['30','30','30','24']" data-width="['800','800','600','400']" data-height="['none','none','none','none']" data-whitespace="['normal','normal','normal','normal']" data-type="text" data-responsive_offset="on"
+                                 data-frames='[
+                                        {"from":"y:50px(R);opacity:0;","speed":1500,"to":"o:1;","delay":500,"ease":"Power4.easeOut"},
+                                        {"delay":"wait","speed":1000,"to":"y:-50px;opacity:0;","ease":"Power2.easeInOut"}
+                                        ]' data-textAlign="['right','right','right','right']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 13; font-weight: 500; color: rgba(255, 255, 255, 0.85); border-width:0px;">
+                                <span></span>
+                            </div>
+
+                            <!-- LAYER NR. 4 [ for readmore botton ] -->
+                            <div class="tp-caption tp-resizeme" id="slide-100-layer-4" data-x="['right','right','right','right']" data-hoffset="['30','30','30','30']" data-y="['top','top','top','top']" data-voffset="['370','370','370','340']" data-fontsize="['none','none','none','none']"
+                                 data-lineheight="['none','none','none','none']" data-width="['700','700','700','700']" data-height="['none','none','none','none']" data-whitespace="['normal','normal','normal','normal']" data-type="text" data-responsive_offset="on"
+                                 data-frames='[
+                                        {"from":"y:50px(R);opacity:0;","speed":1500,"to":"o:1;","delay":500,"ease":"Power4.easeOut"},
+                                        {"delay":"wait","speed":1000,"to":"y:-50px;opacity:0;","ease":"Power2.easeInOut"}
+                                        ]' data-textAlign="['right','right','right','right']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 13;">
+                                <a class="site-button  button-skew">
+                                    <span>اطلاعات بیشتر</span><i class="fa fa-angle-right"></i>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>
+                </div>
+            </div>
+            <!-- اتمام اسلایدر  -->
+        </div>
+    </div>
 </div>
+<!-- Slider END -->
+<!-- meet & ask -->
+<div class="section-full z-index100 meet-ask-outer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9 meet-ask-row p-tb30">
+                <div class="row d-flex">
+                    <div class="col-lg-6">
+                        <div class="icon-bx-wraper clearfix text-white left">
+                            <div class="icon-xl "> <span class=" icon-cell"><i class="flaticon-buildings"></i></span> </div>
+                            <div class="icon-content">
+                                <h3 class="dez-tilte text-uppercase m-b10">سوالات</h3>
+                                <p>شما میتوانید نیازها ، رویاها و اهداف پروژه خود را با ما در میان بگذارید.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 m-t20">
+                        <a class="site-button-secondry button-skew m-l10">
+                            <span>ارتباط با ما</span><i class="fa fa-angle-right"></i>
+                        </a>
+                        <a class="site-button-secondry button-skew m-l20">
+                            <span>اطلاعات بیشتر</span><i class="fa fa-angle-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- meet & ask END -->
+<!-- About Company -->
+<div class="section-full  bg-gray content-inner-1" style="background-image: url(~/Theme/images/bg-img.png); background-repeat: repeat-x; background-position: left bottom -37px;">
+    <div class="container">
+        <div class="section-content">
+            <div class="row">
+                <div class="col-lg-7">
+                    <h2 class="text-uppercase"> درباره شرکت</h2>
+                    <div class="dez-separator-outer ">
+                        <div class="dez-separator bg-secondry style-skew"></div>
+                    </div>
+                    <div class="clear"></div>
+                    <p><strong></strong></p>
+                    <p class="m-b50"></p>
+                    <div class="row">
+                        <div class="col-md-6 col-lg-6 col-sm-6">
+                            <div class="icon-bx-wraper bx-style-1 p-a20 left m-b30">
+                                <div class="icon-bx-sm bg-secondry "> <span class="icon-cell"><i class="flaticon-buildings text-primary"></i></span> </div>
+                                <div class="icon-content">
+                                    <h3 class="dez-tilte text-uppercase">ساخت و ساز</h3>
+                                    <p>ما بهترین پروژه ساخت و ساز را برای شما ارائه می دهیم.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-6 col-sm-6">
+                            <div class="icon-bx-wraper bx-style-1 p-a20 left m-b30">
+                                <div class="icon-bx-sm bg-secondry "> <span class="icon-cell"><i class="flaticon-house text-primary"></i></span> </div>
+                                <div class="icon-content">
+                                    <h3 class="dez-tilte text-uppercase">معماری</h3>
+                                    <p>خدمات معمار ما طراحی سطح بالایی را برای شما.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-6 col-sm-6">
+                            <div class="icon-bx-wraper bx-style-1 p-a20 left m-b30">
+                                <div class="icon-bx-sm bg-secondry "> <span class="icon-cell"><i class="flaticon-technical-support text-primary"></i></span> </div>
+                                <div class="icon-content">
+                                    <h3 class="dez-tilte text-uppercase">مشاوره</h3>
+                                    <p>تیم مشاوره ما همیشه آماده کمک به شما هستند.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-6 col-sm-6">
+                            <div class="icon-bx-wraper bx-style-1 p-a20 left m-b30">
+                                <div class="icon-bx-sm bg-secondry "> <span class="icon-cell"><i class="flaticon-mechanical-arm text-primary"></i></span> </div>
+                                <div class="icon-content">
+                                    <h3 class="dez-tilte text-uppercase">مکانیکی</h3>
+                                    <p>ما از نظر مکانیکی برای ساختن ساختمان شما. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="dez-thu m"><img src="~/Theme/images/worker2.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- About Company END -->
+<!-- Our Projects  -->
+<div class="section-full bg-img-fix content-inner-1 overlay-black-middle" style="background-image:url(~/Theme/images/background/bg1.jpg);">
+    <div class="container">
+        <div class="section-head  text-center text-white">
+            <h2 class="text-uppercase">پروژه های ما</h2>
+            <div class="dez-separator-outer ">
+                <div class="dez-separator bg-white style-skew"></div>
+            </div>
+            <p>به دلیل بهترین کیفیت و خدمات ، پیروزی همیشه هدف ما بوده است ، ما فقط بهترین استعدادها را به خاطر می آوریم. ما با راهنمایی ، سادگی و صداقت صحیح همه کارهایی را برای شما انجام خواهیم داد که بتواند شما را راحت کند.</p>
+        </div>
+        <div class="portfolio-carousel mfp-gallery gallery owl-carousel owl-btn-center-lr lightgallery">
+            <div class="item">
+                <div class="ow-portfolio">
+                    <div class="ow-portfolio-img dez-img-overlay1 dez-img-effect zoom-slow">
+                        <img src="~/Theme/images/our-work/middle/pic1.jpg" alt="">
+                        <div class="overlay-bx">
+                            <div class="overlay-icon">
+                                <span data-exthumbimage="~/Theme/images/our-work/thumb/pic1.jpg" data-src="~/Theme/images/our-work/large/pic1.jpg" class="icon-bx-xs check-km" title="گالری">
+                                    <i class="far fa-image"></i>
+                                </span>
+                                <a> <i class="fa fa-link icon-bx-xs"></i> </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="ow-portfolio">
+                    <div class="ow-portfolio-img dez-img-overlay1 dez-img-effect zoom-slow">
+                        <img src="~/Theme/images/our-work/middle/pic2.jpg" alt="">
+                        <div class="overlay-bx">
+                            <div class="overlay-icon">
+                                <span data-exthumbimage="~/Theme/images/our-work/thumb/pic2.jpg" data-src="~/Theme/images/our-work/large/pic2.jpg" class="icon-bx-xs check-km" title="گالری">
+                                    <i class="far fa-image"></i>
+                                </span>
+                                <a> <i class="fa fa-link icon-bx-xs"></i> </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="ow-portfolio">
+                    <div class="ow-portfolio-img dez-img-overlay1 dez-img-effect zoom-slow">
+                        <img src="~/Theme/images/our-work/middle/pic3.jpg" alt="">
+                        <div class="overlay-bx">
+                            <div class="overlay-icon">
+                                <span data-exthumbimage="~/Theme/images/our-work/thumb/pic3.jpg" data-src="~/Theme/images/our-work/large/pic3.jpg" class="icon-bx-xs check-km" title="گالری">
+                                    <i class="far fa-image"></i>
+                                </span>
+                                <a> <i class="fa fa-link icon-bx-xs"></i> </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="ow-portfolio">
+                    <div class="ow-portfolio-img dez-img-overlay1 dez-img-effect zoom-slow">
+                        <img src="~/Theme/images/our-work/middle/pic4.jpg" alt="">
+                        <div class="overlay-bx">
+                            <div class="overlay-icon">
+                                <span data-exthumbimage="~/Theme/images/our-work/thumb/pic4.jpg" data-src="~/Theme/images/our-work/large/pic4.jpg" class="icon-bx-xs check-km" title="گالری">
+                                    <i class="far fa-image"></i>
+                                </span>
+                                <a> <i class="fa fa-link icon-bx-xs"></i> </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="ow-portfolio">
+                    <div class="ow-portfolio-img dez-img-overlay1 dez-img-effect zoom-slow">
+                        <img src="~/Theme/images/our-work/middle/pic5.jpg" alt="">
+                        <div class="overlay-bx">
+                            <div class="overlay-icon">
+                                <span data-exthumbimage="~/Theme/images/our-work/thumb/pic5.jpg" data-src="~/Theme/images/our-work/large/pic5.jpg" class="icon-bx-xs check-km" title="گالری">
+                                    <i class="far fa-image"></i>
+                                </span>
+                                <a> <i class="fa fa-link icon-bx-xs"></i> </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="ow-portfolio">
+                    <div class="ow-portfolio-img dez-img-overlay1 dez-img-effect zoom-slow">
+                        <img src="~/Theme/images/our-work/middle/pic6.jpg" alt="">
+                        <div class="overlay-bx">
+                            <div class="overlay-icon">
+                                <span data-exthumbimage="~/Theme/images/our-work/thumb/pic6.jpg" data-src="~/Theme/images/our-work/large/pic6.jpg" class="icon-bx-xs check-km" title="گالری">
+                                    <i class="far fa-image"></i>
+                                </span>
+                                <a> <i class="fa fa-link icon-bx-xs"></i> </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Our Projects END -->
+<!-- Architecture -->
+<div class="section-full  bg-white content-inner">
+    <div class="container">
+        <div class="section-head text-center">
+            <h2 class="text-uppercase"> معماری</h2>
+            <div class="dez-separator-outer ">
+                <div class="dez-separator bg-secondry style-skew"></div>
+            </div>
+            <p>ما خدمات متنوعی از جمله مطالعات عملی ، برنامه نویسی معماری و مدیریت پروژه را ارائه می دهیم. قطعاً احساس کار ما شما را متحیر می کند. شما در سیستم کار ما صافی و دقت را پیدا خواهید کرد.</p>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="icon-bx-wraper bx-style-1 p-a30 center m-b30">
+                    <div class="icon-bx-sm bg-secondry m-b20"> <span class="icon-cell"><i class="flaticon-building text-primary"></i></span> </div>
+                    <div class="icon-content">
+                        <h5 class="dez-tilte text-uppercase">ایمنی</h5>
+                        <p>با بهترین کیفیت و خدمات ما همچنان بر ایمنی و حفاظت متمرکز هستیم.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="icon-bx-wraper bx-style-1 p-a30 center m-b30">
+                    <div class="icon-bx-sm bg-secondry m-b20"> <span class="icon-cell"><i class="flaticon-chat-group text-primary"></i></span> </div>
+                    <div class="icon-content">
+                        <h5 class="dez-tilte text-uppercase">انجمن</h5>
+                        <p>ما در مورد پروژه با بهترین اعضای تیم خود کار خواهیم کرد و بحث خواهیم کرد تا تعریف کنیم ... </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="icon-bx-wraper bx-style-1 p-a30 center m-b30">
+                    <div class="icon-bx-sm bg-secondry m-b20"> <span class="icon-cell"><i class="flaticon-solar-energy text-primary"></i></span> </div>
+                    <div class="icon-content">
+                        <h5 class="dez-tilte text-uppercase">پایداری</h5>
+                        <p>ما یک پروژه ساخت و ساز فوق العاده برای آرزوها و آرزوهای شما ارائه می دهیم ...</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="icon-bx-wraper bx-style-1 p-a30 center m-b30">
+                    <div class="icon-bx-sm bg-secondry m-b20"> <span class="icon-cell"><i class="flaticon-quality text-primary"></i></span> </div>
+                    <div class="icon-content">
+                        <h5 class="dez-tilte text-uppercase">بهترین کیفیت</h5>
+                        <p>ما به بهترین کیفیت نسبت به کمیت اعتقاد داریم. ما همیشه بهترین تلاش را برای مشتریان خود داریم تا ... </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="icon-bx-wraper bx-style-1 p-a30 center m-b30">
+                    <div class="icon-bx-sm bg-secondry m-b20"> <span class="icon-cell"><i class="flaticon-integrated-system text-primary"></i></span> </div>
+                    <div class="icon-content">
+                        <h5 class="dez-tilte text-uppercase">تمامیت</h5>
+                        <p>ما ابتدا بالاترین سطح اعتماد و صداقت را با مشتریان خود ایجاد می کنیم ...</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="icon-bx-wraper bx-style-1 p-a30 center m-b10">
+                    <div class="icon-bx-sm bg-secondry m-b20"> <span class="icon-cell"><i class="flaticon-strategy text-primary"></i></span> </div>
+                    <div class="icon-content">
+                        <h5 class="dez-tilte text-uppercase">استراتژی</h5>
+                        <p>ما طرح اصلی خود را با حفظ نیازهای مردم ، که همیشه ...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Architecture END-->
+<!-- Company staus -->
+<div class="section-full text-white bg-img-fix content-inner overlay-black-middle" style="background-image:url(~/Theme/images/background/bg4.jpg);">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-6 m-b30">
+                <div class="p-a30 text-white text-center border-3">
+                    <div class="icon-lg m-b20"><i class="flaticon-buildings"></i></div>
+                    <div class="counter font-26 font-weight-800 text-primary m-b5">1035</div>
+                    <span>کارشناسان فعال</span>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 m-b30">
+                <div class="p-a30 text-white text-center border-3">
+                    <div class="icon-lg m-b20"><i class="flaticon-costumer"></i></div>
+                    <div class="counter font-26 font-weight-800 text-primary m-b5">1226</div>
+                    <span>مشتری راضی</span>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 m-b30">
+                <div class="p-a30 text-white text-center border-3">
+                    <div class="icon-lg m-b20"><i class="flaticon-development"></i></div>
+                    <div class="counter font-26 font-weight-800 text-primary m-b5">1552</div>
+                    <span>توسعه دهنده</span>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 m-b10">
+                <div class="p-a30 text-white text-center border-3">
+                    <div class="icon-lg m-b20"><i class="flaticon-finish-flag"></i></div>
+                    <div class="counter font-26 font-weight-800 text-primary m-b5">1156</div>
+                    <span>پروژه تکمیل شده</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Company staus END -->
+<!-- Team member -->
+<div class="section-full bg-white content-inner">
+    <div class="container">
+        <div class="section-head text-center ">
+            <h2 class="text-uppercase"> با تیم ما آشنا شوید</h2>
+            <div class="dez-separator-outer ">
+                <div class="dez-separator bg-secondry style-skew"></div>
+            </div>
+            <p>
+                تیم هوشمند ما از همه امور مراقبت می کند. کل تیم از ابتدا تا انتها عالی کار کرده اند. تیم ما روی هدف و بهترین خدمات متمرکز است.
+
+            </p>
+        </div>
+        <div class="section-content">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-6 dez-team-1 left">
+                    <div class="dez-box m-b30 team-skew ">
+                        <div class="dez-media">
+                            <a href="javascript:;"> <img src="~/Theme/images/our-team/team/pic1.png" alt="" width="358" height="460"> </a>
+                            <div class="dez-info-has">
+                                <ul class="dez-social-icon bg-primary">
+                                    <li><a href="javascript:void(0);" class="fab fa-facebook"></a></li>
+                                    <li><a href="javascript:void(0);" class="fab fa-twitter"></a></li>
+                                    <li><a href="javascript:void(0);" class="fab fa-linkedin"></a></li>
+                                    <li><a href="javascript:void(0);" class="fab fa-google-plus-g"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="p-a20 bg-secondry text-center text-white team-info ">
+                            <h4 class="dez-title text-uppercase m-t0 m-b5"><a href="javascript:;" class=" text-white">حسین اسلامبلچی</a></h4>
+                            <span class="dez-member-position">کارگردان</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 dez-team-1">
+                    <div class="dez-box m-b30 team-skew ">
+                        <div class="dez-media">
+                            <a href="javascript:;"> <img src="~/Theme/images/our-team/team/pic2.png" alt="" width="358" height="460"> </a>
+                            <div class="dez-info-has">
+                                <ul class="dez-social-icon bg-primary">
+                                    <li><a href="javascript:void(0);" class="fab fa-facebook"></a></li>
+                                    <li><a href="javascript:void(0);" class="fab fa-twitter"></a></li>
+                                    <li><a href="javascript:void(0);" class="fab fa-linkedin"></a></li>
+                                    <li><a href="javascript:void(0);" class="fab fa-google-plus-g"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="p-a20 bg-secondry text-center text-white team-info ">
+                            <h4 class="dez-title text-uppercase m-t0 m-b5"><a href="javascript:;" class=" text-white">مهران رجبی</a></h4>
+                            <span class="dez-member-position">مدیر</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 dez-team-1 right">
+                    <div class="dez-box m-b30 team-skew ">
+                        <div class="dez-media">
+                            <a href="javascript:;"> <img src="~/Theme/images/our-team/team/pic3.png" alt="" width="358" height="460"> </a>
+                            <div class="dez-info-has">
+                                <ul class="dez-social-icon bg-primary">
+                                    <li><a href="javascript:void(0);" class="fab fa-facebook"></a></li>
+                                    <li><a href="javascript:void(0);" class="fab fa-twitter"></a></li>
+                                    <li><a href="javascript:void(0);" class="fab fa-linkedin"></a></li>
+                                    <li><a href="javascript:void(0);" class="fab fa-google-plus-g"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="p-a20 bg-secondry text-center text-white team-info ">
+                            <h4 class="dez-title text-uppercase m-t0 m-b5"><a href="javascript:;" class=" text-white">سعید پیردوست</a></h4>
+                            <span class="dez-member-position">توسعه دهنده</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Team member END -->
+<!-- Latest blog -->
+<div class="section-full content-inner-1 ">
+    <div class="container">
+        <div class="section-head text-center">
+            <h2 class="text-uppercase">پست های اخیر بلاگ</h2>
+            <div class="dez-separator-outer ">
+                <div class="dez-separator bg-secondry style-skew"></div>
+            </div>
+        </div>
+        <div class="section-content">
+            <div class="blog-carousel mfp-gallery gallery owl-carousel owl-btn-center-lr">
+                <div class="item">
+                    <div class="ow-blog-post date-style-2">
+                        <div class="ow-post-media dez-img-effect zoom-slow"> <img src="~/Theme/images/our-work/pic1.jpg" alt=""> </div>
+                        <div class="ow-post-info ">
+                            <div class="ow-post-title">
+                                <h4 class="post-title"> <a title="Video post">برنامه ریزی ساخت و ساز</a> </h4>
+                            </div>
+                            <div class="ow-post-meta">
+                                <ul>
+                                    <li class="post-date"> <i class="fa fa-calendar"></i><strong>10 خرداد</strong> <span> 1400</span> </li>
+                                    <li class="post-author"><i class="fa fa-user"></i>توسط <a href="javascript:;">رامین</a> </li>
+                                    <li class="post-comment"><i class="fa fa-comments"></i> <a href="javascript:;">2 کامنت</a> </li>
+                                </ul>
+                            </div>
+                            <div class="ow-post-text">
+                                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>
+                            </div>
+                            <div class="ow-post-readmore "> <a title="اطلاعات بیشتر" rel="bookmark" class=" site-button-link">اطلاعات بیشتر <i class="fa fa-angle-double-left"></i></a> </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="ow-blog-post date-style-2">
+                        <div class="ow-post-media dez-img-effect zoom-slow"> <img src="~/Theme/images/our-work/pic2.jpg" alt=""> </div>
+                        <div class="ow-post-info ">
+                            <div class="ow-post-title">
+                                <h4 class="post-title"> <a title="Video post">خدمات حرفه</a> </h4>
+                            </div>
+                            <div class="ow-post-meta">
+                                <ul>
+                                    <li class="post-date"> <i class="fa fa-calendar"></i><strong>10 خرداد</strong> <span> 1400</span> </li>
+                                    <li class="post-author"><i class="fa fa-user"></i>توسط <a href="javascript:;">رامین</a> </li>
+                                    <li class="post-comment"><i class="fa fa-comments"></i> <a href="javascript:;">2 کامنت</a> </li>
+                                </ul>
+                            </div>
+                            <div class="ow-post-text">
+                                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>
+                            </div>
+                            <div class="ow-post-readmore "> <a title="اطلاعات بیشتر" rel="bookmark" class=" site-button-link">اطلاعات بیشتر <i class="fa fa-angle-double-left"></i></a> </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="ow-blog-post date-style-2">
+                        <div class="ow-post-media dez-img-effect zoom-slow"> <img src="~/Theme/images/our-work/pic3.jpg" alt=""> </div>
+                        <div class="ow-post-info ">
+                            <div class="ow-post-title">
+                                <h4 class="post-title"> <a href="#" title="Video post">طراحی حرفه</a> </h4>
+                            </div>
+                            <div class="ow-post-meta">
+                                <ul>
+                                    <li class="post-date"> <i class="fa fa-calendar"></i><strong>10 خرداد</strong> <span> 1400</span> </li>
+                                    <li class="post-author"><i class="fa fa-user"></i>توسط <a href="javascript:;">رامین</a> </li>
+                                    <li class="post-comment"><i class="fa fa-comments"></i> <a href="javascript:;">2 کامنت</a> </li>
+                                </ul>
+                            </div>
+                            <div class="ow-post-text">
+                                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>
+                            </div>
+                            <div class="ow-post-readmore "> <a title="اطلاعات بیشتر" rel="bookmark" class=" site-button-link">اطلاعات بیشتر <i class="fa fa-angle-double-left"></i></a> </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="ow-blog-post date-style-2">
+                        <div class="ow-post-media dez-img-effect zoom-slow"> <img src="~/Theme/images/our-work/pic4.jpg" alt=""> </div>
+                        <div class="ow-post-info ">
+                            <div class="ow-post-title">
+                                <h4 class="post-title"> <a href="#" title="Video post">برنامه ریزی ساخت و ساز</a> </h4>
+                            </div>
+                            <div class="ow-post-meta">
+                                <ul>
+                                    <li class="post-date"> <i class="fa fa-calendar"></i><strong>10 خرداد</strong> <span> 1400</span> </li>
+                                    <li class="post-author"><i class="fa fa-user"></i>توسط <a href="javascript:;">رامین</a> </li>
+                                    <li class="post-comment"><i class="fa fa-comments"></i> <a href="javascript:;">2 کامنت</a> </li>
+                                </ul>
+                            </div>
+                            <div class="ow-post-text">
+                                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>
+                            </div>
+                            <div class="ow-post-readmore "> <a title="اطلاعات بیشتر" rel="bookmark" class=" site-button-link">اطلاعات بیشتر <i class="fa fa-angle-double-left"></i></a> </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="ow-blog-post date-style-2">
+                        <div class="ow-post-media dez-img-effect zoom-slow"> <img src="~/Theme/images/our-work/pic5.jpg" alt=""> </div>
+                        <div class="ow-post-info ">
+                            <div class="ow-post-title">
+                                <h4 class="post-title"> <a href="#" title="Video post">خدمات حرفه ای</a> </h4>
+                            </div>
+                            <div class="ow-post-meta">
+                                <ul>
+                                    <li class="post-date"> <i class="fa fa-calendar"></i><strong>10 خرداد</strong> <span> 1400</span> </li>
+                                    <li class="post-author"><i class="fa fa-user"></i>توسط <a href="javascript:;">رامین</a> </li>
+                                    <li class="post-comment"><i class="fa fa-comments"></i> <a href="javascript:;">2 کامنت</a> </li>
+                                </ul>
+                            </div>
+                            <div class="ow-post-text">
+                                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>
+                            </div>
+                            <div class="ow-post-readmore "> <a href="#" title="اطاطلاعات بیشتر" rel="bookmark" class=" site-button-link">اطلاعات بیشتر <i class="fa fa-angle-double-left"></i></a> </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="ow-blog-post date-style-2">
+                        <div class="ow-post-media dez-img-effect zoom-slow"> <img src="~/Theme/images/our-work/pic6.jpg" alt=""> </div>
+                        <div class="ow-post-info ">
+                            <div class="ow-post-title">
+                                <h4 class="post-title"> <a href="#" title="Video post">طراحی حرفه ای</a> </h4>
+                            </div>
+                            <div class="ow-post-meta">
+                                <ul>
+                                    <li class="post-date"> <i class="fa fa-calendar"></i><strong>10 خرداد</strong> <span> 1400</span> </li>
+                                    <li class="post-author"><i class="fa fa-user"></i>توسط <a href="javascript:;">رامین</a> </li>
+                                    <li class="post-comment"><i class="fa fa-comments"></i> <a href="javascript:;">2 کامنت</a> </li>
+                                </ul>
+                            </div>
+                            <div class="ow-post-text">
+                                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>
+                            </div>
+                            <div class="ow-post-readmore "> <a href="#" title="اطاطلاعات بیشتر" rel="bookmark" class=" site-button-link">اطلاعات بیشتر <i class="fa fa-angle-double-left"></i></a> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Latest blog END -->
+<!-- Testimonials blog -->
+<div class="section-full overlay-black-middle bg-img-fix content-inner-1" style="background-image:url(~/Theme/images/background/bg2.jpg);">
+    <div class="container">
+        <div class="section-head text-white text-center">
+            <h2 class="text-uppercase">رضایت مشتریان</h2>
+            <div class="dez-separator-outer ">
+                <div class="dez-separator bg-white  style-skew"></div>
+            </div>
+        </div>
+        <div class="section-content">
+            <div class="testimonial-one owl-carousel owl-theme">
+                <div class="item">
+                    <div class="testimonial-1 testimonial-bg">
+                        <div class="testimonial-pic quote-left radius shadow"><img src="~/Theme/images/testimonials/pic1.jpg" width="100" height="100" alt=""></div>
+                        <div class="testimonial-text">
+                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز</p>
+                        </div>
+                        <div class="testimonial-detail"> <strong class="testimonial-name">مریم بوبانی</strong> <span class="testimonial-position">متخصص رسانه</span> </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="testimonial-1 testimonial-bg">
+                        <div class="testimonial-pic quote-left radius shadow"><img src="~/Theme/images/testimonials/pic1.jpg" width="100" height="100" alt=""></div>
+                        <div class="testimonial-text">
+                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز</p>
+                        </div>
+                        <div class="testimonial-detail"> <strong class="testimonial-name">مریم بوبانی</strong> <span class="testimonial-position">متخصص رسانه</span> </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="testimonial-1 testimonial-bg">
+                        <div class="testimonial-pic quote-left radius shadow"><img src="~/Theme/images/testimonials/pic1.jpg" width="100" height="100" alt=""></div>
+                        <div class="testimonial-text">
+                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز</p>
+                        </div>
+                        <div class="testimonial-detail"> <strong class="testimonial-name">مریم بوبانی</strong> <span class="testimonial-position">دانش آموز</span> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Testimonials blog END -->
+<!-- Client logo -->
+<div class="section-full dez-we-find bg-img-fix p-t50 p-b50 ">
+    <div class="container">
+        <div class="section-content">
+            <div class="client-logo-carousel owl-carousel mfp-gallery gallery owl-btn-center-lr">
+                <div class="item">
+                    <div class="ow-client-logo">
+                        <div class="client-logo"><a href="#"><img src="~/Theme/images/client-logo/logo1.jpg" alt=""></a></div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="ow-client-logo">
+                        <div class="client-logo"> <a href="#"><img src="~/Theme/images/client-logo/logo2.jpg" alt=""></a> </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="ow-client-logo">
+                        <div class="client-logo"> <a href="#"><img src="~/Theme/images/client-logo/logo1.jpg" alt=""></a> </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="ow-client-logo">
+                        <div class="client-logo"> <a href="#"><img src="~/Theme/images/client-logo/logo3.jpg" alt=""></a> </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="ow-client-logo">
+                        <div class="client-logo"> <a href="#"><img src="~/Theme/images/client-logo/logo4.jpg" alt=""></a> </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="ow-client-logo">
+                        <div class="client-logo"> <a href="#"><img src="~/Theme/images/client-logo/logo3.jpg" alt=""></a> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Client logo END -->
