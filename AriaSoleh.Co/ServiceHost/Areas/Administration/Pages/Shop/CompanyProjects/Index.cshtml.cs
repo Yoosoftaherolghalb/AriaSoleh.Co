@@ -29,5 +29,16 @@ namespace ServiceHost.Areas.Administration.Pages.Shop.CompanyProjects
             var result = _companyProject.Create(command);
             return new JsonResult(result);
         }
+
+        public IActionResult OnGetEdit(Guid id)
+        {
+            var model = _companyProject.GetDetails(id);
+            return Partial("./Edit", model);
+        }
+        public JsonResult OnPostEdit(EditCompanyProject command)
+        {
+            var result = _companyProject.Edit(command);
+            return new JsonResult(result);
+        }
     }
 }
