@@ -24,5 +24,10 @@ namespace ServiceHost.Areas.Administration.Pages.Shop.CompanyProjects
         {
             return Partial("./Create", new CreateCompanyProject());
         }
+        public JsonResult OnPostCreate(CreateCompanyProject command)
+        {
+            var result = _companyProject.Create(command);
+            return new JsonResult(result);
+        }
     }
 }
