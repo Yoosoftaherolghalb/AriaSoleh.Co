@@ -1,0 +1,34 @@
+﻿@model List<_01_Query.Contracts.CompanyProject.CompanyProjectQueryModel>
+
+<div class="section-full bg-img-fix content-inner-1 overlay-black-middle" style="background-image:url(~/Theme/images/background/bg1.jpg);">
+    <div class="container">
+        <div class="section-head  text-center text-white">
+            <h2 class="text-uppercase">پروژه های ما</h2>
+            <div class="dez-separator-outer ">
+                <div class="dez-separator bg-white style-skew"></div>
+            </div>
+            <p>به دلیل بهترین کیفیت و خدمات ، پیروزی همیشه هدف ما بوده است ، ما فقط بهترین استعدادها را به خاطر می آوریم. ما با راهنمایی ، سادگی و صداقت صحیح همه کارهایی را برای شما انجام خواهیم داد که بتواند شما را راحت کند.</p>
+        </div>
+        <div class="portfolio-carousel mfp-gallery gallery owl-carousel owl-btn-center-lr lightgallery">
+            @foreach (var project in Model)
+            {
+                <div class="item">
+                    <div class="ow-portfolio">
+                        <div class="ow-portfolio-img dez-img-overlay1 dez-img-effect zoom-slow">
+                            <img src="@project.Picture" alt="">
+                            <div class="overlay-bx">
+                                <div class="overlay-icon">
+                                    <span data-exthumbimage="~/Theme/images/our-work/thumb/pic1.jpg" data-src="~/Theme/images/our-work/large/pic1.jpg" class="icon-bx-xs check-km" title="@project.Name">
+                                        <i class="far fa-image"></i>
+                                    </span>
+                                    <a> <i class="fa fa-link icon-bx-xs"></i> </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            }
+        </div>
+    </div>
+</div>

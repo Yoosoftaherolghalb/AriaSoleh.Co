@@ -1,4 +1,6 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using _01_Query.Contracts.CompanyProject;
+using _01_Query.Query;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using ShopManagement.Application;
 using ShopManagement.Application.Contracts.CompanyProject;
@@ -15,7 +17,7 @@ namespace ShopManagement.Cofiguration
             service.AddTransient<ICompanyProjectApplication, CompanyProjectApplication>();
             service.AddTransient<ICompanyProjectRepository, CompanyProjectRepository>();
             service.AddTransient<ICompanyProjectApplication, CompanyProjectApplication>();
-
+            service.AddTransient<ICompanyProjectQuery, CompanyProjectQuery>();
 
             service.AddDbContext<Context>(x => x.UseSqlServer(connectionString));
         }
